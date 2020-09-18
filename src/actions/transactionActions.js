@@ -20,6 +20,7 @@ export const insert = (data) => (dispatch) => {
 };
 
 export const update = (data, i) => (dispatch) => {
+  console.log(data,"djkhdwhjdwhdwhd")
   dispatch({
     type: UPDATE,
     payload: { data: data, index: i },

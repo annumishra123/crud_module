@@ -1,3 +1,53 @@
+// import React, { useContext, useEffect, useState } from "react";
+// import { user1 } from "../context/GlobalState";
+// import { GlobalContext } from "../context/GlobalState";
+// import { Link } from "react-router-dom";
+// import { ListGroup, ListGroupItem, Button } from "reactstrap";
+
+// export const UserList = () => {
+//   const [name, setName] = useState("");
+
+//   useEffect(() => {
+//     async function fetchData() {
+//       setName(await user1());
+//       // console.log(await featchUser(),"kkkj")
+//       // console.log(await user1())
+//     }
+//     fetchData();
+//   }, []);
+
+//   const { removeUser, featchUser } = useContext(GlobalContext);
+//   return (
+//     <ListGroup className="mt-4">
+//       {/* {name.length > 0 ? ( */}
+//         <>
+//           {name &&
+//             name.data.map((user) => (
+//               <ListGroupItem className="d-flex" key={user.id}>
+//                 <strong>{user.name} </strong>
+//                 <div className="ml-auto">
+//                   <Link
+//                     className="btn btn-warning mr-1"
+//                     to={`/edit/${user.id}`}
+//                   >
+//                     Edit
+//                   </Link>
+//                   <Button onClick={() => removeUser(user.id, name)} color="danger">
+//                     Delete
+//                   </Button>
+//                 </div>
+//               </ListGroupItem>
+//             ))}
+//         </>
+//       {/* ) : (
+//         <h4 className="text-center">No User</h4>
+//       )} */}
+//     </ListGroup>
+//   );
+// };
+
+
+
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { ListGroup, ListGroupItem, Button, Input, FormGroup } from "reactstrap";
